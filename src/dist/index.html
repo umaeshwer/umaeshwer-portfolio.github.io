@@ -2,37 +2,78 @@
 <html lang="en">
 
 <head>
-  <title>devfolio</title>
+  <title>Umaeshwer's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
   <link rel="stylesheet" href="css/main.bundle.css">
   <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
+  <style>
+    .timeline-container {
+      position: relative;
+      padding-left: 2rem;
+    }
+    
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      left: 1rem;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, #3273dc, #23d160);
+    }
+    
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .timeline-marker {
+      position: absolute;
+      left: -2.5rem;
+      top: 1rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 0 3px #3273dc;
+      z-index: 2;
+    }
+    
+    .timeline-item .card {
+      margin-left: 1rem;
+      flex: 1;
+    }
+    
+    .is-rounded {
+      border-radius: 50% !important;
+    }
+  </style>
 </head>
 
 <body>
   <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <div class="navbar-item is-hidden-desktop">
-        <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
+        <a href="https://github.com/umaeshwer" class="icon is-large has-text-light">
           <i class="fab fa-2x fa-github"></i>
-        </a>
-      </div>
-      <div class="navbar-item is-hidden-desktop">
-        <a href="https://fullstackmark.com" class="icon is-large has-text-light">
-          <i class="fas fa-2x fa-globe"></i>
         </a>
       </div>
     </div>
     <div class="navbar-menu">
       <div class="navbar-end">
         <div class="navbar-item">
-          <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
+          <a href="https://github.com/umaeshwer" class="icon is-large has-text-light">
             <i class="fab fa-2x fa-github"></i>
-          </a>
-        </div>
-        <div class="navbar-item">
-          <a href="https://fullstackmark.com" class="icon is-large has-text-light">
-            <i class="fas fa-2x fa-globe"></i>
           </a>
         </div>
       </div>
@@ -45,20 +86,22 @@
         <div class="level">
           <div class="level-item has-text-centered">
             <figure class="image is-128x128">
-              <img class="is-rounded" src="img/me-big.jpg">
+              <img class="is-rounded" src="profile_pic.JPG">
             </figure>
           </div>
         </div>
         <div class="columns has-text-centered">
           <div class="column">
-            <h1 class="title is-1">
-              Mark Macneil
-            </h1>
+            <div class="mt-6">
+              <h1 class="title is-1">
+                Umaeshwer Shankar
+              </h1>
+            </div>
             <h2 class="subtitle">
-              FullStack .NET Dev, Halifax, NS
+              Data Science, Machine Learning, AI
             </h2>
             <p>
-              <a href="docs/resume.txt" class="icon has-text-light">
+              <a href="docs/resume.pdf" class="icon has-text-light">
                 <i class="fas fa-file-word"></i> <strong>Resume</strong>
               </a>
             </p>
@@ -72,11 +115,12 @@
     <div class="container">
       <h1 class="title">About Me</h1>
       <hr />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
+       <p>I am a Machine Learning Engineer with 3+ years of experience designing and deploying scalable MLOps solutions for Fortune 500 clients. 
+         My expertise spans building production-grade ML applications, automating data pipelines, and monitoring deployed systems — primarily on Microsoft Azure.</p>
+       <br>
+       <p>Currently pursuing a Masters in Applied Data Science at USC, I am expanding my knowledge across the full ML lifecycle while applying my engineering background to real-world challenges.</p>
+       <br>
+       <p>Beyond work, I enjoy traveling, connecting with new people, and exploring philosophy and spirituality; perspectives that shape how I approach collaboration and problem-solving.</p>
     </div>
   </section>
   <section class="section">
@@ -88,61 +132,43 @@
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img src="img/dunder-mifflin-logo.png" alt="Placeholder image">
+                <img src="img/tiger-logo.png" alt="Tiger Analytics logo">
               </figure>
             </div>
             <div class="media-content">
-              <p class="title is-4">Company Name</p>
-              <p class="subtitle is-6">Title - <time datetime="2018-1">January 2018</time> - <time
-                  datetime="2019-9">Sepemter 2019</time> </p>
+              <p class="title is-4">Tiger Analytics</p>
+              <p class="subtitle is-6">June 2022 - June 2025</p>
             </div>
           </div>
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
-            <ul>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
-            </ul>
-            <div class="tags">
-              <span class="tag">c#</span>
-              <span class="tag">xamarin</span>
-              <span class="tag">asp.net core</span>
-              <span class="tag">.net core</span>
-              <span class="tag">azure</span>
-              <span class="tag">devops</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card card-gap">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="img/pied-piper-logo.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Company Name</p>
-              <p class="subtitle is-6">Title - <time datetime="2018-1">August 2017</time> - <time
-                  datetime="2017-9">January 2018</time></p>
-            </div>
-          </div>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
-            <ul>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
-            </ul>
-            <div class="tags">
-              <span class="tag">c#</span>
-              <span class="tag">xamarin</span>
-              <span class="tag">asp.net core</span>
-              <span class="tag">.net core</span>
-              <span class="tag">azure</span>
-              <span class="tag">devops</span>
+            <div class="timeline-container">
+              <div class="timeline-item">
+                <div class="timeline-marker is-primary"></div>
+                <div class="card">
+                  <div class="card-content">
+                    <p class="title is-5">Machine Learning Engineer</p>
+                    <p class="subtitle is-6">January 2025 - June 2025</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker is-info"></div>
+                <div class="card">
+                  <div class="card-content">
+                    <p class="title is-5">Senior Analyst, Machine Learning Engineering</p>
+                    <p class="subtitle is-6">June 2023 - January 2025</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker is-success"></div>
+                <div class="card">
+                  <div class="card-content">
+                    <p class="title is-5">Analyst, Machine Learning Engineering</p>
+                    <p class="subtitle is-6">June 2022 - June 2023</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -154,7 +180,10 @@
     <div class="container">
       <h1 class="title">Projects</h1>
       <hr />
-      <div class="tile is-ancestor">
+      <div class="content has-text-centered">
+        <p class="subtitle is-4">Updating soon</p>
+      </div>
+      <!-- <div class="tile is-ancestor">
         <div class="tile is-vertical is-12">
           <div class="tile">
             <div class="tile is-parent">
@@ -214,44 +243,28 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
 
   <section class="section">
     <div class="container">
-      <h1 class="title">Education / Training</h1>
+      <h1 class="title">Education</h1>
       <hr />
       <div class="card">
         <div class="card-content">
           <div class="content">
-            <p class="title is-4">School Name</p>
-            <p class="subtitle is-6">Program/Course - <time datetime="2016-9">September 2016</time> - <time
-                datetime="2019-9">Sepemter 2019</time></p>
-          </div>
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris.
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            </ul>
+            <p class="title is-4">University of Southern California</p>
+            <p class="subtitle is-6">Master of Science in Applied Data Science - <time datetime="2025-8">August 2025</time> - <time
+                datetime="2027-5">May 2027 (Expected)</time></p>
           </div>
         </div>
       </div>
       <div class="card card-gap">
         <div class="card-content">
           <div class="content">
-            <p class="title is-4">School Name</p>
-            <p class="subtitle is-6">Program/Course - <time datetime="2015-9">September 2014</time> - <time
-                datetime="2015-9">Sepemter 2015</time></p>
-          </div>
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris.
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            </ul>
+            <p class="title is-4">Indian Institute of Technology Tirupati</p>
+            <p class="subtitle is-6">Bachelor of Technology in Electrical Engineering - <time datetime="2018-7">July 2018</time> - <time
+                datetime="2022-6">June 2022</time></p>
           </div>
         </div>
       </div>
@@ -265,34 +278,26 @@
       <nav class="level">
         <div class="level-item has-text-centered">
           <div>
-            <a href="https://github.com/mmacneil" class="icon is-large">
+            <a href="https://github.com/umaeshwer" class="icon is-large">
               <i class="fab fa-2x fa-github"></i>
             </a>
-            <p class="heading"><a href="https://github.com/mmacneil">github.com/mmacneil</a></p>
+            <p class="heading"><a href="https://github.com/umaeshwer">github.com/umaeshwer</a></p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <a href="https://fullstackmark.com" class="icon is-large">
-              <i class="fas fa-2x fa-globe"></i>
-            </a>
-            <p class="heading"><a href="https://fullstackmark.com">fullstackmark.com</a></p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="mailto:markmacneil@gmail.com" class="icon is-large">
+            <a href="mailto:umaeshwer@gmail.com" class="icon is-large">
               <i class="fas fa-2x fa-envelope"></i>
             </a>
-            <p class="heading"><a href="mailto:markmacneil@gmail.com">markmacneil@gmail.com</a></p>
+            <p class="heading"><a href="mailto:umaeshwer@gmail.com">umaeshwer@gmail.com</a></p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <a href="https://www.linkedin.com/in/markmacneilhfx" class="icon is-large">
+            <a href="https://www.linkedin.com/in/umaeshwer" class="icon is-large">
               <i class="fab fa-2x fa-linkedin-in"></i>
             </a>
-            <p class="heading"><a href="https://www.linkedin.com/in/markmacneilhfx">linkedin</a></p>
+            <p class="heading"><a href="https://www.linkedin.com/in/umaeshwer">linkedin</a></p>
           </div>
         </div>
       </nav>
