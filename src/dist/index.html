@@ -10,32 +10,70 @@
   <link rel="apple-touch-icon" href="favicon.png">
   <link rel="stylesheet" href="css/main.bundle.css">
   <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
+  <style>
+    .timeline-container {
+      position: relative;
+      padding-left: 2rem;
+    }
+    
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      left: 1rem;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, #3273dc, #23d160);
+    }
+    
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .timeline-marker {
+      position: absolute;
+      left: -2.5rem;
+      top: 1rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 0 3px #3273dc;
+      z-index: 2;
+    }
+    
+    .timeline-item .card {
+      margin-left: 1rem;
+      flex: 1;
+    }
+    
+    .is-rounded {
+      border-radius: 50% !important;
+    }
+  </style>
 </head>
 
 <body>
   <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <div class="navbar-item is-hidden-desktop">
-        <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
+        <a href="https://github.com/umaeshwer" class="icon is-large has-text-light">
           <i class="fab fa-2x fa-github"></i>
-        </a>
-      </div>
-      <div class="navbar-item is-hidden-desktop">
-        <a href="https://fullstackmark.com" class="icon is-large has-text-light">
-          <i class="fas fa-2x fa-globe"></i>
         </a>
       </div>
     </div>
     <div class="navbar-menu">
       <div class="navbar-end">
         <div class="navbar-item">
-          <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
+          <a href="https://github.com/umaeshwer" class="icon is-large has-text-light">
             <i class="fab fa-2x fa-github"></i>
-          </a>
-        </div>
-        <div class="navbar-item">
-          <a href="https://fullstackmark.com" class="icon is-large has-text-light">
-            <i class="fas fa-2x fa-globe"></i>
           </a>
         </div>
       </div>
@@ -83,8 +121,6 @@
        <p>Currently pursuing a Masters in Applied Data Science at USC, I am expanding my knowledge across the full ML lifecycle while applying my engineering background to real-world challenges.</p>
        <br>
        <p>Beyond work, I enjoy traveling, connecting with new people, and exploring philosophy and spirituality; perspectives that shape how I approach collaboration and problem-solving.</p>
-       <br>
-       <p>I am actively seeking internship opportunities in Data Science, Data Engineering, Machine Learning Engineering, or Analytics.</p>
     </div>
   </section>
   <section class="section">
@@ -96,48 +132,45 @@
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img src="img/tiger-logo.png" alt="Placeholder image">
+                <img src="img/tiger-logo.png" alt="Tiger Analytics logo">
               </figure>
             </div>
             <div class="media-content">
               <p class="title is-4">Tiger Analytics</p>
-              <p class="subtitle is-6">Machine Learning Engineer - <time datetime="2025-1">January 2025</time> - <time
-                  datetime="2025-6">June 2025</time> </p>
+              <p class="subtitle is-6">June 2022 - June 2025</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="card card-gap">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="img/tiger-logo.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Tiger Analytics</p>
-              <p class="subtitle is-6">Senior Analyst, Machine Learning Engineering - <time datetime="2023-6">June 2023</time> - <time
-                  datetime="2025-1">January 2025</time></p>
+          <div class="content">
+            <div class="timeline-container">
+              <div class="timeline-item">
+                <div class="timeline-marker is-primary"></div>
+                <div class="card">
+                  <div class="card-content">
+                    <p class="title is-5">Machine Learning Engineer</p>
+                    <p class="subtitle is-6">January 2025 - June 2025</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker is-info"></div>
+                <div class="card">
+                  <div class="card-content">
+                    <p class="title is-5">Senior Analyst, Machine Learning Engineering</p>
+                    <p class="subtitle is-6">June 2023 - January 2025</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker is-success"></div>
+                <div class="card">
+                  <div class="card-content">
+                    <p class="title is-5">Analyst, Machine Learning Engineering</p>
+                    <p class="subtitle is-6">June 2022 - June 2023</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="card card-gap">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="img/tiger-logo.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Tiger Analytics</p>
-              <p class="subtitle is-6">Analyst, Machine Learning Engineering - <time datetime="2022-6">June 2022</time> - <time
-                  datetime="2023-6">June 2023</time></p>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
@@ -221,15 +254,8 @@
         <div class="card-content">
           <div class="content">
             <p class="title is-4">University of Southern California</p>
-            <p class="subtitle is-6">M.S. in Applied Data Science - <time datetime="2025-8">August 2025</time> - <time
-                datetime="2027-5">Present</time></p>
-          </div>
-          <div class="content">
-            Coursework:
-            <ul>
-              <li>Introduction to Computational Thinking and Data Science</li>
-              <li>Data Science at Scale</li>
-            </ul>
+            <p class="subtitle is-6">Master of Science in Applied Data Science - <time datetime="2025-8">August 2025</time> - <time
+                datetime="2027-5">May 2027 (Expected)</time></p>
           </div>
         </div>
       </div>
@@ -237,19 +263,8 @@
         <div class="card-content">
           <div class="content">
             <p class="title is-4">Indian Institute of Technology Tirupati</p>
-            <p class="subtitle is-6">B.Tech in Electrical Engineering - <time datetime="2018-7">July 2018</time> - <time
+            <p class="subtitle is-6">Bachelor of Technology in Electrical Engineering - <time datetime="2018-7">July 2018</time> - <time
                 datetime="2022-6">June 2022</time></p>
-          </div>
-          <div class="content">
-            Coursework:
-            <ul>
-              <li>Calculus</li>
-              <li>Linear Algebra</li>
-              <li>Probability and Statistics</li>
-              <li>Machine Learning for Image Processing</li>
-              <li>Computer Vision</li>
-              <li>Information Theory and Coding</li>
-            </ul>
           </div>
         </div>
       </div>
